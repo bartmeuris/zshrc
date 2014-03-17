@@ -25,7 +25,11 @@ export ZDOTDIR="$HOME/.zsh"
 
 # Helper function used within.
 function load {
-    source $ZDOTDIR/$1.zsh
+    if [[ -f $ZDOTDIR/$1.zsh ]]; then
+        source $ZDOTDIR/$1.zsh
+    else
+        echo "WARN: $ZDOTDIR/$1.zsh does not exist!"
+    fi
 }
 
 # Chain load the various components of our configuration.
@@ -37,7 +41,6 @@ load variables
 load functions
 load aliases
 load options
-#load bindings
 load helpers
 load history
 load prompt
@@ -45,6 +48,8 @@ load completion
 load i10n
 load os-specific
 load local
+load ls-colors
+load keys
 
 # this shit won't work anywhere else!!!
 setopt print_exit_value
