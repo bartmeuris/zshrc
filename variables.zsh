@@ -13,8 +13,8 @@ export BROWSER='open'
 # http://geoff.greer.fm/lscolors/
 export CLICOLOR=1
 # export LSCOLORS="ExGxFxDxCxDxDxhbhdacEc"
-export LSCOLORS="Exfxcxdxbxegedabagacad"
-export LS_COLORS="di=01;34:ln=35;40:so=32;40:pi=33;40:ex=31;40:bd=34;46:cd=34;43:su=0;41:sg=0;46:tw=0;42:ow=0;43:"
+#export LSCOLORS="Exfxcxdxbxegedabagacad"
+#export LS_COLORS="di=01;34:ln=35;40:so=32;40:pi=33;40:ex=31;40:bd=34;46:cd=34;43:su=0;41:sg=0;46:tw=0;42:ow=0;43:"
 export EDITOR='vim'
 export LESSOPEN="|lesspipe %s"
 export VISUAL=$EDITOR
