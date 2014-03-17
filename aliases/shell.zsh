@@ -40,6 +40,8 @@ alias v='less'
 
 # Fix common mistakes.
 alias cd.='cd .'
+alias cd..='cd ..'
+alias ..='cd ..'
 alias cd/='cd /'
 
 # Process management.
