@@ -10,7 +10,7 @@ path+=(/usr/local/bin /usr/bin /bin)
 # Update the path for interactive execution.
 #path+=(~/.bin /usr/local/sbin /usr/sbin /sbin)
 path=(
-~/.bin
+~/bin
 /usr/local/bin
 /usr/bin
 /bin
