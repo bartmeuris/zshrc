@@ -17,6 +17,7 @@ zstyle ':completion:*:functions' ignored-patterns '_*'
 #If you want it to complete users if and only if it can't complete anything else,
 #drop the trailing "-".
 zstyle ':completion::complete:cd::' tag-order '! users' -
+#zstyle ':completion:*:cd:*' tag-order local-directories path-directories
 
 
 #fpath=($ZDOTDIR/comp $fpath)
