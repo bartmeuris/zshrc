@@ -26,7 +26,7 @@ fi
 alias cp='nocorrect cp -i'
 alias mkdir='nocorrect mkdir'
 alias mv='nocorrect mv -i'
-alias rm='nocorrect rm -i'
+alias rm='nocorrect rm'
 
 # Disable globbing for these commands as they perform their own.
 alias find='noglob find'

@@ -34,6 +34,8 @@ setopt pushd_minus # Reverse the meaning of +/- after pushing the CWD.
 setopt pushd_to_home # With no arguments act like 'pushd $HOME'.
 setopt pushdsilent
 setopt rc_quotes
+#setopt rm_star_silent
+#setopt NO_rm_star_wait
 
 unsetopt flow_control
 bindkey -e #emacs mode
