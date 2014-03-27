@@ -5,8 +5,9 @@
 setopt print_exit_value
 setopt transientrprompt # only have the rprompt on the last line
 setopt always_to_end
-#setopt auto_cd # Typing the name of a subdirectory of the CWD (or in cdpath) will go there.
+setopt auto_cd # Typing the name of a subdirectory of the CWD (or in cdpath) will go there.
 setopt auto_menu # Cycle through possibilities during tab completion.
+setopt menu_complete
 setopt auto_pushd # Automatically append to the stack.
 setopt cdable_vars
 setopt complete_in_word # Completion matches text to the left of the cursor when mid-word.

@@ -19,16 +19,17 @@ zstyle ':completion:*:functions' ignored-patterns '_*'
 zstyle ':completion::complete:cd::' tag-order '! users' -
 #zstyle ':completion:*:cd:*' tag-order local-directories path-directories
 
-
 #fpath=($ZDOTDIR/comp $fpath)
 # brew install zsh-completions
 fpath=(/usr/local/share/zsh-completions $fpath)
 
 autoload -U compinit && compinit
+zmodload zsh/complist
 
 # reset completion for specific commands
 # mark command for marked.app, and i don't use _mh (mail client?)
 compdef -d ${(k)_comps[(R)_mh]}
 #compdef -d mark
 
-
+# Don't require double enter
+bindkey -M menuselect '^M' .accept-line
