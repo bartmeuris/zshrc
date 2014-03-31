@@ -50,6 +50,7 @@ load os-specific
 load local
 load ls-colors
 load keys
+load cmdedit
 
 # this shit won't work anywhere else!!!
 setopt print_exit_value
